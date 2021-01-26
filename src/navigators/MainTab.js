@@ -27,6 +27,6 @@ export default () => (
         >        
         <Tab.Screen name="TabAbout" component={TabAboutScreen} options={{tabBarLabel:'Sobre'}} />
         <Tab.Screen name="TabHome" component={HomeStack} options={{tabBarLabel:'Home'}} />
-        <Tab.Screen name="TabConfig" component={TabConfigScreen} options={{tabBarLabel:'Config'}} />
+        <Tab.Screen name="TabConfig" component={TabConfigScreen} options={{tabBarLabel:'Config', tabBarVisible:false}} />
     </Tab.Navigator>
 );
