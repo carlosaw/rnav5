@@ -1,11 +1,10 @@
 import React from 'react';
-import { View, Text, StyleSheet, Button } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 
-function TabHomeScreen({navigation}) {
+function TabHomeScreen() {
     return (
         <View style={styles.container}>
-            <Text>TAB HOME</Text>
-            <Button title="Ir para Tela 2" onPress={()=>navigation.navigate('TabHome2Screen')} />           
+            <Text>TAB HOME</Text>            
         </View>
     );
 }

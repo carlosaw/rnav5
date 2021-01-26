@@ -4,7 +4,8 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 import TabBarIcon from '../components/TabBarIcon';
 
-import TabHomeScreen from '../pages/TabHomeScreen';
+import HomeStack from './HomeStack';
+
 import TabAboutScreen from '../pages/TabAboutScreen';
 import TabConfigScreen from '../pages/TabConfigScreen';
 
@@ -23,10 +24,9 @@ export default () => (
                 padding: 10
             }
         }}
-        > 
-       
+        >        
         <Tab.Screen name="TabAbout" component={TabAboutScreen} options={{tabBarLabel:'Sobre'}} />
-        <Tab.Screen name="TabHome" component={TabHomeScreen} options={{tabBarLabel:'Home'}} />
+        <Tab.Screen name="TabHome" component={HomeStack} options={{tabBarLabel:'Home'}} />
         <Tab.Screen name="TabConfig" component={TabConfigScreen} options={{tabBarLabel:'Config'}} />
     </Tab.Navigator>
 );
